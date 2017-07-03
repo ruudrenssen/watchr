@@ -1,0 +1,11 @@
+%container {
+	@include clearfix;
+
+	position: relative;
+
+	max-width: 80em;
+
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 $gutter;
+}

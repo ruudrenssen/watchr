@@ -1,0 +1,38 @@
+fieldset {
+	//todo: add default styling
+}
+
+label {
+	//todo: add default styling
+}
+
+input, select {
+	&::placeholder {
+		//todo: add default styling
+	}
+
+	&:disabled {
+		//todo: add default styling
+	}
+
+	&[type='password'] {
+		//todo: add default styling
+	}
+
+	&[type='checkbox'],
+	&[type='radio'] {
+		//todo: add default styling
+
+		~ label {
+			//todo: add default styling
+		}
+	}
+}
+
+textarea {
+	//todo: add default styling
+}
+
+button {
+	//todo: add default styling
+}

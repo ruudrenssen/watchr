@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+	overflow-y: scroll;
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: $typeface-body;
+	font-size: $font-size-m;
+	font-feature-settings: 'liga';
+
+	line-height: $default-line-height;
+	text-rendering: optimizeLegibility;
+
+	// Expose media query breakpoints to the outside using the 'content' property of the ':before' pseudo element! :)
+	&::before {
+		@include breakpoint-sync;
+	}
+}

@@ -1,0 +1,51 @@
+$gutter: 1rem;
+
+$space-xxs:	0.3125rem;
+$space-xs:	0.625rem;
+$space-s:	1rem;
+$space-m:	2.5rem;
+$space-l:	5rem;
+$space-xl:	7.5rem;
+
+// Sizing for images???
+$img-xxs:	0.25rem;
+$img-xs:	0.5rem;
+$img-s:		1rem;
+$img-m:		2rem;
+$img-l:		4rem;
+$img-xl:	10rem;
+$img-xxl:	14rem;
+
+$ezpz-namespace:				'.grid';
+$ezpz-grid-type:				'fractions';
+
+// $ezpz-grid-default-wrap:		'wrap';
+$ezpz-grid-wrap:				true;
+$ezpz-grid-align:				true;
+$ezpz-cell-order:				true;
+$ezpz-cell-offset:				true;
+$ezpz-cell-align:				true;
+$ezpz-gutter-collapse:			true;
+
+$ezpz-breakpoints: 				$breakpoints;
+$ezpz-gutter:					$gutter;
+
+$ezpz-fractions:				(1: 2),
+	(1: 3),
+	(2: 3),
+	(1: 4),
+	(3: 4),
+	(1: 5),
+	(1: 6),
+	(4: 5),
+	(5: 6);
+
+// component specific variables
+$inline-form-label-width:		16rem;
+
+//z-indexes
+$zindex-background:				0;
+$zindex-navigation:				10;
+$zindex-notification:			20;
+$zindex-modal:					30;
+$zindex-tooltip:				40;

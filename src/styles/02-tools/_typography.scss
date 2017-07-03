@@ -1,0 +1,16 @@
+@mixin declare-font-face($font-family, $font-filename, $font-weight: normal, $font-style: normal, $font-stretch: normal) {
+	@font-face {
+		font-family: '#{$font-family}';
+		font-style: $font-style;
+		font-weight: $font-weight;
+		font-stretch: $font-stretch;
+		src: url('#{$font-filename}.eot'),
+			url('#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+			url('#{$font-filename}.woff') format('woff'),
+			url('#{$font-filename}.ttf') format('truetype'),
+			url('#{$font-filename}.svg##{$font-family}') format('svg');
+	}
+}
+
+@include declare-font-face('ING Me', '/fonts/INGMeWeb-Regular');
+@include declare-font-face('ING Me', '/fonts/INGMeWeb-Bold', bold);

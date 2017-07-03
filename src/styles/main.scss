@@ -1,0 +1,32 @@
+// Settings
+// Used with preprocessors and contain font, colors definitions, etc.
+@import '01-settings/breakpoints';
+@import '01-settings/layout';
+@import '01-settings/borders';
+@import '01-settings/color';
+@import '01-settings/iconography';
+@import '01-settings/typography';
+
+// Tools
+// Globally used mixins and functions
+@import '02-tools/*';
+
+// Generic
+// Reset and/or normalize styles, box-sizing definition, etc.
+@import '03-generic/*.scss';
+
+// Elements
+// Styling for bare HTML elements (like H1, A, etc.)
+@import '04-elements/*.scss';
+
+// Objects
+// Class-based selectors which define undecorated design patterns
+@import '05-objects/*.scss';
+
+// Components
+// Specific UI components
+@import '06-components/*.scss';
+
+// Trumps
+// Specific UI components (like utilities and helper classes)
+@import '07-trumps/*.scss';

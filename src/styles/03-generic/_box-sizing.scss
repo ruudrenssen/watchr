@@ -1,0 +1,22 @@
+// stylelint-disable selector-no-universal
+
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+* {
+	&,
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}
+
+.full-width-on-small {
+	display: block;
+
+	width: 100%;
+
+	@include respond-to(extra-small) {
+		display: inline-block;
+
+		width: auto;
+	}
+}

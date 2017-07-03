@@ -1,0 +1,11 @@
+// SEE: https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_clearfix.scss
+
+@mixin clearfix {
+	&::after {
+		display: table;
+
+		clear: both;
+
+		content: '';
+	}
+}

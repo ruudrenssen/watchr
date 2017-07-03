@@ -1,0 +1,74 @@
+//default styles typography block elements
+h1, h2, h3, h4, h5, h6, p, blockquote {
+	margin: 0 0 $space-s;
+	padding: 0;
+}
+
+//default styles headings
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font-weight-bold;
+	line-height: $heading-line-height;
+}
+
+//single text styles
+h1 {
+	margin-top: #{$gutter * 2};
+
+	font-size: $font-size-xl;
+	font-weight: $font-weight-normal;
+}
+
+h2 {
+	margin-top: #{$gutter};
+
+	font-size: $font-size-l;
+	font-weight: $font-weight-normal;
+}
+
+h3 {
+	margin-top: #{$gutter / 4};
+
+	font-size: $font-size-m;
+	font-weight: $font-weight-normal;
+}
+
+h4, h5, h6 {
+	margin-top: #{$gutter / 4};
+
+	font-size: $font-size-s;
+}
+
+p {
+	font-size: $font-size-s;
+}
+
+blockquote {
+	&::before {
+		content: '\201C';
+	}
+
+	&::after {
+		content: '\201D';
+	}
+}
+
+
+//inline typography blocks
+a {
+}
+
+cite {
+	font-style: italic;
+}
+
+em {
+	font-weight: $font-weight-bold;
+}
+
+q {
+	font-style: italic;
+}
+
+small {
+	font-size: $font-size-xs;
+}

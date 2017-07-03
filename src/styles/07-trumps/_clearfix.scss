@@ -1,0 +1,5 @@
+$module: '.clearfix';
+
+#{$module} {
+	@include clearfix;
+}
