@@ -1,0 +1,20 @@
+.logo-container {
+	position: relative;
+}
+
+.logo {
+	position: relative;
+	color: $white;
+	background: $brand-color;
+	padding: 5px 0;
+	font-size: $font-size-xxl;
+	font-weight: 300;
+}
+
+.pay-off {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	font-size: $font-size-s;
+	color: $brand-color-dark;
+}

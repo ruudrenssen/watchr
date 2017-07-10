@@ -4,15 +4,34 @@ fieldset {
 
 label {
 	//todo: add default styling
+	line-height: 2.75;
+	margin-right: $gutter;
 }
 
 input, select {
+	padding: $space-xs;
+	font-family: $typeface-body;
+	color: $brand-color-dark;
+	border-top: 1px solid $gray-light;
+	border-right: none;
+	border-bottom: 1px solid $gray;
+	border-left: 1px solid $gray-light;
+	line-height: $default-line-height;
+	min-width: 0;
+
 	&::placeholder {
 		//todo: add default styling
+		color: $gray;
 	}
 
 	&:disabled {
 		//todo: add default styling
+	}
+
+	&:active, &:focus {
+		box-shadow: 0 #{$gutter / 4} #{$gutter} rgba($brand-color-dark, 0.15);
+		outline: none;
+		border: 1px solid $brand-color;
 	}
 
 	&[type='password'] {
@@ -35,4 +54,17 @@ textarea {
 
 button {
 	//todo: add default styling
+	padding: $space-xs $space-m;
+	font-family: $typeface-body;
+	font-weight: $font-weight-bold;
+	color: $white;
+	background: $brand-color;
+	border: none;
+	line-height: $default-line-height;
+	border: 1px solid $brand-color;
+
+	&:hover, &:active, &:focus {
+		background-color: $brand-color-dark;
+		border: 1px solid $brand-color-dark;
+	}
 }

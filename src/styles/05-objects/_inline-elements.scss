@@ -1,0 +1,12 @@
+.inline-element-container {
+	display: flex;
+	align-items: stretch;
+}
+
+.inline-element {
+	flex-basis: auto;
+
+	&--grow {
+		flex-grow: 2;
+	}
+}

@@ -6,10 +6,10 @@ html {
 
 body {
 	margin: 0;
-	padding: 0;
+	padding: #{$gutter / 2};
 
 	font-family: $typeface-body;
-	font-size: $font-size-m;
+	font-size: $font-size-xs;
 	font-feature-settings: 'liga';
 
 	line-height: $default-line-height;
@@ -19,4 +19,24 @@ body {
 	&::before {
 		@include breakpoint-sync;
 	}
+
+	@include respond-to(small) {
+		font-size: $font-size-s;
+		padding: $gutter;
+	}
+
+	@include respond-to(large) {
+		font-size: $font-size-m;
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: $gutter;
+	background: $brand-color-dark;
+	color: $white;
+	font-size: $font-size-xs;
 }

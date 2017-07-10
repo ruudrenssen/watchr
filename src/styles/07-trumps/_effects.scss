@@ -1,0 +1,3 @@
+.add-box-shadow {
+	box-shadow: 0 #{$gutter / 4} #{$gutter} rgba($brand-color-dark, 0.15);
+}

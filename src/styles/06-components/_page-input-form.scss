@@ -1,0 +1,24 @@
+.page-input-form {
+	position: absolute;
+	top: calc(52vh - 110px);
+	right: 0;
+	left: 0;
+	margin: auto;
+	padding: #{$gutter / 2};
+
+	@include respond-to(extra-small){
+		width: 85%;
+		padding: $gutter;
+	}
+	
+	@include respond-to(small){
+		width: 70%;
+	}
+	
+	@include respond-to(medium){
+		width: 60%;
+	}
+	@include respond-to(large){
+		width: 50%;
+	}
+}

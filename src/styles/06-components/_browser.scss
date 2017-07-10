@@ -1,0 +1,10 @@
+.browser {
+	position: absolute;
+	width: 80%;
+	height: 70%;
+	top: calc(35vh - 110px);
+	right: 0;
+	left: 0;
+	margin: auto;
+	border: 1px solid $gray-light;
+}
